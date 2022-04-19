@@ -1,0 +1,29 @@
+
+
+
+IF (RecordTypeId ="01238000000ECPt", MOD(VALUE(Auto_Account_Number__c) ,7) +1, 0)
+ 
+
+It would however be best to use RecordType.DeveloperName instead of the ID.
+
+
+IF(
+    ISPICKVAL(Lead.Sub_Status__c,"Personal Loan"),
+    1,
+    0
+)
+
+
+
+
+IF(
+    ISPICKVAL(  RecordType.ManageableState  ,"Personal Loan"),MOD(VALUE(Lead_Number__c) ,2) +1,0)
+
+
+
+
+
+0122y000000on3iAAA - personal loan
+
+
+0122y000000on1mAAA  - Lead
